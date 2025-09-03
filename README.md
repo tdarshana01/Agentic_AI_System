@@ -1,146 +1,110 @@
-🏭 Agentic AI Incident Analysis System
+# 🏭 Agentic AI Incident Analysis System
 
-📌 Overview
+## 📌 Overview
+This project implements an **AI-powered Incident Analysis System** for a manufacturing plant.  
+It integrates **IoT sensor data** with a **retrieval-augmented generation (RAG) pipeline** to assist maintenance teams by:
 
-This project implements an AI-powered Incident Analysis System for a manufacturing plant.
-It integrates IoT sensor data with a retrieval-augmented generation (RAG) pipeline to assist maintenance teams by:
-
-Collecting structured incident data from IoT sensors / central control systems.
-
-Storing past incidents in a FAISS vector database for efficient similarity search.
-
-Using LLM reasoning (phi-2-dpo via LM Studio) to analyze new incidents against historical data.
-
-Providing structured recommendations such as:
-
-Potential risk level
-
-Likely root cause(s)
-
-Suggested remedial actions
-
-Prevention advice
+- Collecting structured incident data from IoT sensors / central control systems.  
+- Storing past incidents in a **FAISS vector database** for efficient similarity search.  
+- Using **LLM reasoning (mistralai/mistral-7b-instruct-v0.3 via LM Studio)** to analyze new incidents against historical data.  
+- Providing structured recommendations such as:
+  - Potential **risk level**
+  - Likely **root cause(s)**
+  - Suggested **remedial actions**
+  - **Prevention advice**  
 
 The system exposes functionality via:
 
-FastAPI REST API (for ingestion & analysis)
+- **FastAPI REST API** (for ingestion & analysis)  
+- **WebSocket / UI layer** (for real-time updates to operators)  
+- **Streamlit client** (simple web interface for viewing AI recommendations)  
 
-WebSocket / UI layer (for real-time updates to operators)
+---
 
-Streamlit client (simple web interface for viewing AI recommendations)
+## 🛠️ Project Structure
 
-🛠️ Project Structure
-
+```bash
 Agentic-AI-System/
-
 │── API/
-│   └── app.py                 # FastAPI app
+│ └── app.py # FastAPI app
 │
 │── query/
-│   ├── build_index.py         # Build FAISS index from incidents
-│   ├── query_new.py           # Query logic
-│   └── prompt_logic.py        # LLM + Prompt orchestration
+│ ├── build_index.py # Build FAISS index from incidents
+│ ├── query_new.py # Query logic
+│ └── prompt_logic.py # LLM + Prompt orchestration
 │
 │── UI/
-│   ├── client_ws.py           # WebSocket / API client
-│   └── streamlit_ui.py        # Streamlit UI (optional)
+│ ├── client_ws.py # WebSocket / API client
+│ └── streamlit_ui.py # Streamlit UI (optional)
 │
 │── data/
-│   ├── past_incidents.json    # Dataset of 100 past incidents
-│   └── storage/               # FAISS vector DB storage
+│ ├── past_incidents.json # Dataset of 100 past incidents
+│ └── storage/ # FAISS vector DB storage
 │
 │── docs/
-│   ├── ArchitectureDiagram.png
-│   └── Project_Report.docx
+│ ├── ArchitectureDiagram.png
+│ └── Project_Report.docx
 │
 │── requirements.txt
 │── README.md
-│── .gitignore
+```
 
-⚡ Setup Instructions
-1️⃣ Clone Repository
+
+---
+
+## ⚡ Setup Instructions
+
+### 1️⃣ Clone Repository
+```bash
 git clone https://github.com/<your-username>/Agentic-AI-System.git
 cd Agentic-AI-System
+```
 
-2️⃣ Install Dependencies
-
-We recommend using Anaconda / venv.
-
+### 2️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-
-Main dependencies:
-
-fastapi + uvicorn (API server)
-
-llama-index + faiss-cpu (vector DB & embeddings)
-
-transformers (HuggingFace embeddings)
-
-openai (for LM Studio integration)
-
-streamlit (UI option)
-
-3️⃣ Build Vector Index
-
-Convert past incidents into FAISS vector DB:
-
+### 3️⃣ Build Vector Index
+```bash
 python query/build_index.py
+```
 
-4️⃣ Run FastAPI Service
+### 4️⃣ Run FastAPI Service
+```bash
 uvicorn API.app:app --reload
-
+```
 
 API will be available at:
 👉 http://127.0.0.1:8000
 
-📡 Usage
-✅ REST API
+## 📡 Usage
+### ✅ REST API
 
-Send a new incident JSON:
-
+Send a new incident JSON (updated schema):
+```bash
 {
-  "incident_id": "AUTO-INC-002",
-  "machine": "Filler Line B",
-  "timestamp": "2025-08-18T09:45:00Z",
-  "type": "ConveyorJam",
-  "measured_value": null,
-  "threshold": null,
-  "status": "emergency_stop"
+  "new_incident": {
+    "incident_id": "AUTO-INC-002",
+    "machine": "Filler Line B",
+    "timestamp": "2025-08-18T09:45:00Z",
+    "type": "ConveyorJam",
+    "measured_value": null,
+    "threshold": null,
+    "status": "emergency_stop"
+  }
 }
-
+```
 
 Example call:
-
+```bash
 curl -X POST "http://127.0.0.1:8000/analyze_incident/" \
      -H "Content-Type: application/json" \
      -d @sample_incident.json
+```
 
-✅ Python Client
-import requests
-
-payload = {
-  "incident_id": "AUTO-INC-002",
-  "machine": "Filler Line B",
-  "timestamp": "2025-08-18T09:45:00Z",
-  "type": "ConveyorJam",
-  "measured_value": None,
-  "threshold": None,
-  "status": "emergency_stop"
-}
-
-response = requests.post("http://127.0.0.1:8000/analyze_incident/", json=payload)
-print(response.json())
-
-✅ Streamlit UI
-
-Run:
-
-streamlit run UI/streamlit_ui.py
-
-📊 Example Output
-=== AI Recommendation ===
----
+## 📊 Example Output
+```bash
 Incident: AUTO-INC-002 | Machine: Filler Line B | Type: ConveyorJam
 
 Risk Level: High
@@ -155,11 +119,9 @@ Recommended Action(s):
 - Clean up any spillage and perform safety checks
 
 Relevant Past Incidents Count: 2
----
-
-📐 Architecture
-
-📝 Assumptions & Schema
+```
+## 📐 Architecture
+### 📝 Assumptions & Schema
 
 Incidents are generated by IoT sensors on machines.
 
@@ -168,13 +130,16 @@ A central control system converts sensor alerts into structured JSON.
 Only incidents (alerts exceeding thresholds or causing shutdowns) are forwarded.
 
 JSON Schema:
-
+```bash
 {
-  "incident_id": "string",
-  "machine": "string",
-  "timestamp": "ISO8601 string",
-  "type": "string",
-  "measured_value": "number | null",
-  "threshold": "number | null",
-  "status": "string"
+  "new_incident": {
+    "incident_id": "string",
+    "machine": "string",
+    "timestamp": "ISO8601 string",
+    "type": "string",
+    "measured_value": "number | null",
+    "threshold": "number | null",
+    "status": "string"
+  }
 }
+```
