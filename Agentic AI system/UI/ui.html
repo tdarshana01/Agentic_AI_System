@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Incident Downtime Monitoring</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Incident Downtime Monitoring</h1>
+        <div id="status">Waiting for updates...</div>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Latest Incident</h2>
+            <div id="latest">No incidents yet...</div>
+        </section>
+
+        <section class="card">
+            <h2>Recent Incidents</h2>
+            <div id="recent"></div>
+        </section>
+    </main>
+
+    <script>
+        const status = document.getElementById("status");
+        const latestBox = document.getElementById("latest");
+        const recentBox = document.getElementById("recent");
+
+        const ws = new WebSocket("ws://127.0.0.1:8000/ws");
+
+        ws.onopen = () => {
+            status.textContent = "Connected. Waiting for incidents...";
+        };
+
+        ws.onmessage = function(event) {
+            status.textContent = "New incident received!";
+
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+
+            // inside ws.onmessage
+            const messageText = event.data;
+            let riskClass = "low-risk";
+            if (/High/i.test(messageText))      riskClass = "high-risk";
+            else if (/Moderate/i.test(messageText)) riskClass = "moderate-risk";
+
+            const newEntry = document.createElement("div");
+            newEntry.classList.add("message", riskClass);
+            newEntry.innerHTML = `
+              <div class="text">${messageText}</div>
+              <div class="timestamp">${new Date().toLocaleTimeString()}</div>
+            `;
+
+            // Move old latest to recent
+            if (latestBox.innerHTML.trim() !== "No incidents yet...") {
+                const oldLatest = latestBox.firstElementChild.cloneNode(true);
+                recentBox.insertBefore(oldLatest, recentBox.firstChild);
+            }
+
+            // Replace latest with new message
+            latestBox.innerHTML = "";
+            latestBox.appendChild(newEntry);
+        };
+
+        ws.onclose = () => {
+            status.textContent = "Connection closed.";
+        };
+    </script>
+</body>
+</html>

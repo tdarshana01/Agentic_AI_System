@@ -1,0 +1,802 @@
+[
+  {
+    "incident_id": "INC-1001",
+    "date": "2025-06-01",
+    "line": "Pasteurizer A",
+    "description": "Overheating detected at 85\u00b0C. Automatic shutdown triggered.",
+    "cause": "Dust buildup on cooling vents",
+    "remedy": "Cleaned vents; resumed production after 10 minutes."
+  },
+  {
+    "incident_id": "INC-1002",
+    "date": "2025-06-03",
+    "line": "Filler Line B",
+    "description": "Bottle jam detected on conveyor. Emergency stop triggered.",
+    "cause": "Misaligned guide rail",
+    "remedy": "Adjusted guide rail; cleared jam."
+  },
+  {
+    "incident_id": "INC-1003",
+    "date": "2025-06-05",
+    "line": "Pasteurizer B",
+    "description": "Temperature sensor reading fluctuation caused unexpected stop.",
+    "cause": "Loose sensor cable connection",
+    "remedy": "Secured connection; tested sensor stability."
+  },
+  {
+    "incident_id": "INC-1004",
+    "date": "2025-06-07",
+    "line": "Capping Machine C",
+    "description": "High number of loose caps detected by quality check.",
+    "cause": "Worn capping head",
+    "remedy": "Replaced capping head; recalibrated torque."
+  },
+  {
+    "incident_id": "INC-1005",
+    "date": "2025-06-09",
+    "line": "Labeler D",
+    "description": "Labels misaligned on bottles; customer complaint received.",
+    "cause": "Sensor misalignment",
+    "remedy": "Realigned sensor; performed test run."
+  },
+  {
+    "incident_id": "INC-1006",
+    "date": "2025-06-11",
+    "line": "Pasteurizer A",
+    "description": "Overheating detected at 84\u00b0C; auto shutdown.",
+    "cause": "Blocked airflow due to accumulated dust",
+    "remedy": "Cleaned filter and vents; resumed production."
+  },
+  {
+    "incident_id": "INC-1007",
+    "date": "2025-06-13",
+    "line": "Filler Line B",
+    "description": "Bottling speed dropped below threshold; production delay.",
+    "cause": "Low compressed air pressure",
+    "remedy": "Adjusted compressor; restored pressure."
+  },
+  {
+    "incident_id": "INC-1008",
+    "date": "2025-06-15",
+    "line": "Capping Machine C",
+    "description": "Frequent cap jams observed during shift.",
+    "cause": "Dirty feed chute",
+    "remedy": "Cleaned chute; monitored for recurrence."
+  },
+  {
+    "incident_id": "INC-1009",
+    "date": "2025-06-17",
+    "line": "Labeler D",
+    "description": "Print quality degradation on labels.",
+    "cause": "Worn print head",
+    "remedy": "Replaced print head; test print verified."
+  },
+  {
+    "incident_id": "INC-1010",
+    "date": "2025-06-19",
+    "line": "Pasteurizer B",
+    "description": "Temperature spike to 86\u00b0C; automatic shutdown.",
+    "cause": "Faulty thermostat",
+    "remedy": "Replaced thermostat; tested temperature control."
+  },
+  {
+    "incident_id": "INC-1011",
+    "date": "2025-06-21",
+    "line": "Filler Line B",
+    "description": "Liquid spill detected; safety stop engaged.",
+    "cause": "Loose hose connection",
+    "remedy": "Tightened connection; cleaned spill."
+  },
+  {
+    "incident_id": "INC-1012",
+    "date": "2025-06-23",
+    "line": "Capping Machine C",
+    "description": "Incorrect cap placement; high defect rate.",
+    "cause": "Cap feeder misalignment",
+    "remedy": "Realigned feeder; validated with test batch."
+  },
+  {
+    "incident_id": "INC-1013",
+    "date": "2025-06-25",
+    "line": "Labeler D",
+    "description": "Label sensor failed to detect bottles intermittently.",
+    "cause": "Dirty sensor lens",
+    "remedy": "Cleaned lens; verified operation."
+  },
+  {
+    "incident_id": "INC-1014",
+    "date": "2025-06-27",
+    "line": "Pasteurizer A",
+    "description": "Gradual temperature increase beyond setpoint.",
+    "cause": "Blocked cooling water flow",
+    "remedy": "Flushed pipes; resumed operation."
+  },
+  {
+    "incident_id": "INC-1015",
+    "date": "2025-06-29",
+    "line": "Filler Line B",
+    "description": "Inconsistent fill levels detected.",
+    "cause": "Faulty level sensor",
+    "remedy": "Replaced sensor; tested calibration."
+  },
+  {
+    "incident_id": "INC-1016",
+    "date": "2025-07-01",
+    "line": "Capping Machine C",
+    "description": "Caps missing on several bottles in row.",
+    "cause": "Cap magazine empty",
+    "remedy": "Refilled magazine; updated operator instructions."
+  },
+  {
+    "incident_id": "INC-1017",
+    "date": "2025-07-03",
+    "line": "Labeler D",
+    "description": "Frequent label tears during application.",
+    "cause": "Worn label blade",
+    "remedy": "Replaced blade; test run successful."
+  },
+  {
+    "incident_id": "INC-1018",
+    "date": "2025-07-05",
+    "line": "Pasteurizer B",
+    "description": "Rapid temperature drop; process stop.",
+    "cause": "Cooling valve stuck open",
+    "remedy": "Repaired valve; resumed process."
+  },
+  {
+    "incident_id": "INC-1019",
+    "date": "2025-07-07",
+    "line": "Filler Line B",
+    "description": "Excess foam generation; slow fill speed.",
+    "cause": "High carbonation in product",
+    "remedy": "Adjusted carbonation settings; monitored results."
+  },
+  {
+    "incident_id": "INC-1020",
+    "date": "2025-07-09",
+    "line": "Capping Machine C",
+    "description": "Cap torque too high; damaged caps.",
+    "cause": "Incorrect torque setting",
+    "remedy": "Reset torque to specification; tested."
+  },
+  {
+    "incident_id": "INC-1021",
+    "date": "2025-08-01",
+    "line": "Packaging F",
+    "description": "Power fluctuation caused downtime.",
+    "cause": "Electrical short circuit",
+    "remedy": "Lubricated gears; verified smooth operation."
+  },
+  {
+    "incident_id": "INC-1022",
+    "date": "2025-08-02",
+    "line": "Labeler D",
+    "description": "Unexpected pressure drop detected.",
+    "cause": "Corroded wiring",
+    "remedy": "Calibrated sensors; resumed."
+  },
+  {
+    "incident_id": "INC-1023",
+    "date": "2025-08-03",
+    "line": "Capping Machine C",
+    "description": "Valve stuck mid-cycle; safety stop engaged.",
+    "cause": "Improper operator setup",
+    "remedy": "Replaced wiring; restored power."
+  },
+  {
+    "incident_id": "INC-1024",
+    "date": "2025-08-04",
+    "line": "Filler Line B",
+    "description": "Unexpected pressure drop detected.",
+    "cause": "Corroded wiring",
+    "remedy": "Replaced motor; checked load."
+  },
+  {
+    "incident_id": "INC-1025",
+    "date": "2025-08-05",
+    "line": "Pasteurizer B",
+    "description": "Unexpected pressure drop detected.",
+    "cause": "Worn-out bearing",
+    "remedy": "Calibrated sensors; resumed."
+  },
+  {
+    "incident_id": "INC-1026",
+    "date": "2025-08-06",
+    "line": "Sterilizer G",
+    "description": "Unexpected pressure drop detected.",
+    "cause": "Improper operator setup",
+    "remedy": "Replaced wiring; restored power."
+  },
+  {
+    "incident_id": "INC-1027",
+    "date": "2025-08-07",
+    "line": "Pasteurizer B",
+    "description": "Unexpected pressure drop detected.",
+    "cause": "Clogged filter",
+    "remedy": "Replaced wiring; restored power."
+  },
+  {
+    "incident_id": "INC-1028",
+    "date": "2025-08-08",
+    "line": "Filler Line B",
+    "description": "Cooling system underperforming.",
+    "cause": "Insufficient lubrication",
+    "remedy": "Restarted PLC; monitored stability."
+  },
+  {
+    "incident_id": "INC-1029",
+    "date": "2025-08-09",
+    "line": "Pasteurizer B",
+    "description": "Motor overheating alarm triggered.",
+    "cause": "Clogged filter",
+    "remedy": "Adjusted operator settings; tested."
+  },
+  {
+    "incident_id": "INC-1030",
+    "date": "2025-08-10",
+    "line": "Packaging F",
+    "description": "Unexpected pressure drop detected.",
+    "cause": "Worn-out bearing",
+    "remedy": "Replaced wiring; restored power."
+  },
+  {
+    "incident_id": "INC-1031",
+    "date": "2025-08-11",
+    "line": "Pasteurizer A",
+    "description": "Software fault halted production.",
+    "cause": "Blocked pipeline",
+    "remedy": "Replaced faulty part; resumed production."
+  },
+  {
+    "incident_id": "INC-1032",
+    "date": "2025-08-12",
+    "line": "Labeler D",
+    "description": "Valve stuck mid-cycle; safety stop engaged.",
+    "cause": "Cooling fan failure",
+    "remedy": "Replaced motor; checked load."
+  },
+  {
+    "incident_id": "INC-1033",
+    "date": "2025-08-13",
+    "line": "Pasteurizer A",
+    "description": "Valve stuck mid-cycle; safety stop engaged.",
+    "cause": "Worn-out bearing",
+    "remedy": "Restarted PLC; monitored stability."
+  },
+  {
+    "incident_id": "INC-1034",
+    "date": "2025-08-14",
+    "line": "Pasteurizer B",
+    "description": "Valve stuck mid-cycle; safety stop engaged.",
+    "cause": "Blocked pipeline",
+    "remedy": "Flushed pipeline; verified flow."
+  },
+  {
+    "incident_id": "INC-1035",
+    "date": "2025-08-15",
+    "line": "Packaging F",
+    "description": "Motor overheating alarm triggered.",
+    "cause": "Cooling fan failure",
+    "remedy": "Cleaned system; validated restart."
+  },
+  {
+    "incident_id": "INC-1036",
+    "date": "2025-08-16",
+    "line": "Capping Machine C",
+    "description": "Valve stuck mid-cycle; safety stop engaged.",
+    "cause": "Improper operator setup",
+    "remedy": "Replaced faulty part; resumed production."
+  },
+  {
+    "incident_id": "INC-1037",
+    "date": "2025-08-17",
+    "line": "Sterilizer G",
+    "description": "Valve stuck mid-cycle; safety stop engaged.",
+    "cause": "Worn-out bearing",
+    "remedy": "Lubricated gears; verified smooth operation."
+  },
+  {
+    "incident_id": "INC-1038",
+    "date": "2025-08-18",
+    "line": "Capping Machine C",
+    "description": "Valve stuck mid-cycle; safety stop engaged.",
+    "cause": "Overloaded motor",
+    "remedy": "Replaced motor; checked load."
+  },
+  {
+    "incident_id": "INC-1039",
+    "date": "2025-08-19",
+    "line": "Labeler D",
+    "description": "Power fluctuation caused downtime.",
+    "cause": "Improper operator setup",
+    "remedy": "Lubricated gears; verified smooth operation."
+  },
+  {
+    "incident_id": "INC-1040",
+    "date": "2025-08-20",
+    "line": "Capping Machine C",
+    "description": "Software fault halted production.",
+    "cause": "Software glitch",
+    "remedy": "Adjusted operator settings; tested."
+  },
+  {
+    "incident_id": "INC-1041",
+    "date": "2025-08-21",
+    "line": "Packaging F",
+    "description": "System shutdown due to vibration alert.",
+    "cause": "Improper operator setup",
+    "remedy": "Adjusted operator settings; tested."
+  },
+  {
+    "incident_id": "INC-1042",
+    "date": "2025-08-22",
+    "line": "Sterilizer G",
+    "description": "Lubrication failure in gear assembly.",
+    "cause": "Electrical short circuit",
+    "remedy": "Replaced faulty part; resumed production."
+  },
+  {
+    "incident_id": "INC-1043",
+    "date": "2025-08-23",
+    "line": "Capping Machine C",
+    "description": "Frequent misalignment of bottles.",
+    "cause": "Electrical short circuit",
+    "remedy": "Adjusted operator settings; tested."
+  },
+  {
+    "incident_id": "INC-1044",
+    "date": "2025-08-24",
+    "line": "Filler Line B",
+    "description": "Unexpected pressure drop detected.",
+    "cause": "Corroded wiring",
+    "remedy": "Replaced wiring; restored power."
+  },
+  {
+    "incident_id": "INC-1045",
+    "date": "2025-08-25",
+    "line": "Filler Line B",
+    "description": "Software fault halted production.",
+    "cause": "Electrical short circuit",
+    "remedy": "Calibrated sensors; resumed."
+  },
+  {
+    "incident_id": "INC-1046",
+    "date": "2025-08-26",
+    "line": "Packaging F",
+    "description": "Valve stuck mid-cycle; safety stop engaged.",
+    "cause": "Blocked pipeline",
+    "remedy": "Replaced faulty part; resumed production."
+  },
+  {
+    "incident_id": "INC-1047",
+    "date": "2025-08-27",
+    "line": "Labeler D",
+    "description": "Unexpected pressure drop detected.",
+    "cause": "Insufficient lubrication",
+    "remedy": "Replaced wiring; restored power."
+  },
+  {
+    "incident_id": "INC-1048",
+    "date": "2025-08-28",
+    "line": "Capping Machine C",
+    "description": "Software fault halted production.",
+    "cause": "Worn-out bearing",
+    "remedy": "Replaced wiring; restored power."
+  },
+  {
+    "incident_id": "INC-1049",
+    "date": "2025-08-29",
+    "line": "Pasteurizer A",
+    "description": "Frequent misalignment of bottles.",
+    "cause": "Software glitch",
+    "remedy": "Restarted PLC; monitored stability."
+  },
+  {
+    "incident_id": "INC-1050",
+    "date": "2025-08-30",
+    "line": "Pasteurizer B",
+    "description": "Software fault halted production.",
+    "cause": "Clogged filter",
+    "remedy": "Replaced motor; checked load."
+  },
+  {
+    "incident_id": "INC-1051",
+    "date": "2025-08-31",
+    "line": "Capping Machine C",
+    "description": "Software fault halted production.",
+    "cause": "Corroded wiring",
+    "remedy": "Cleaned system; validated restart."
+  },
+  {
+    "incident_id": "INC-1052",
+    "date": "2025-09-01",
+    "line": "Capping Machine C",
+    "description": "Motor overheating alarm triggered.",
+    "cause": "Overloaded motor",
+    "remedy": "Replaced faulty part; resumed production."
+  },
+  {
+    "incident_id": "INC-1053",
+    "date": "2025-09-02",
+    "line": "Pasteurizer A",
+    "description": "Excessive noise detected in operation.",
+    "cause": "Insufficient lubrication",
+    "remedy": "Restarted PLC; monitored stability."
+  },
+  {
+    "incident_id": "INC-1054",
+    "date": "2025-09-03",
+    "line": "Sterilizer G",
+    "description": "Frequent misalignment of bottles.",
+    "cause": "Clogged filter",
+    "remedy": "Restarted PLC; monitored stability."
+  },
+  {
+    "incident_id": "INC-1055",
+    "date": "2025-09-04",
+    "line": "Pasteurizer A",
+    "description": "Unexpected pressure drop detected.",
+    "cause": "Cooling fan failure",
+    "remedy": "Replaced wiring; restored power."
+  },
+  {
+    "incident_id": "INC-1056",
+    "date": "2025-09-05",
+    "line": "Pasteurizer A",
+    "description": "Lubrication failure in gear assembly.",
+    "cause": "Cooling fan failure",
+    "remedy": "Lubricated gears; verified smooth operation."
+  },
+  {
+    "incident_id": "INC-1057",
+    "date": "2025-09-06",
+    "line": "Capping Machine C",
+    "description": "Excessive noise detected in operation.",
+    "cause": "Insufficient lubrication",
+    "remedy": "Replaced motor; checked load."
+  },
+  {
+    "incident_id": "INC-1058",
+    "date": "2025-09-07",
+    "line": "Pasteurizer B",
+    "description": "Lubrication failure in gear assembly.",
+    "cause": "Improper operator setup",
+    "remedy": "Restarted PLC; monitored stability."
+  },
+  {
+    "incident_id": "INC-1059",
+    "date": "2025-09-08",
+    "line": "Pasteurizer A",
+    "description": "Lubrication failure in gear assembly.",
+    "cause": "Blocked pipeline",
+    "remedy": "Flushed pipeline; verified flow."
+  },
+  {
+    "incident_id": "INC-1060",
+    "date": "2025-09-09",
+    "line": "Capping Machine C",
+    "description": "Unexpected pressure drop detected.",
+    "cause": "Corroded wiring",
+    "remedy": "Cleared debris; restarted system."
+  },
+  {
+    "incident_id": "INC-1061",
+    "date": "2025-09-10",
+    "line": "Sterilizer G",
+    "description": "Valve stuck mid-cycle; safety stop engaged.",
+    "cause": "Corroded wiring",
+    "remedy": "Cleaned system; validated restart."
+  },
+  {
+    "incident_id": "INC-1062",
+    "date": "2025-09-11",
+    "line": "Packaging F",
+    "description": "Lubrication failure in gear assembly.",
+    "cause": "Electrical short circuit",
+    "remedy": "Replaced motor; checked load."
+  },
+  {
+    "incident_id": "INC-1063",
+    "date": "2025-09-12",
+    "line": "Packaging F",
+    "description": "System shutdown due to vibration alert.",
+    "cause": "Blocked pipeline",
+    "remedy": "Adjusted operator settings; tested."
+  },
+  {
+    "incident_id": "INC-1064",
+    "date": "2025-09-13",
+    "line": "Sterilizer G",
+    "description": "Power fluctuation caused downtime.",
+    "cause": "Worn-out bearing",
+    "remedy": "Replaced faulty part; resumed production."
+  },
+  {
+    "incident_id": "INC-1065",
+    "date": "2025-09-14",
+    "line": "Pasteurizer B",
+    "description": "Valve stuck mid-cycle; safety stop engaged.",
+    "cause": "Corroded wiring",
+    "remedy": "Flushed pipeline; verified flow."
+  },
+  {
+    "incident_id": "INC-1066",
+    "date": "2025-09-15",
+    "line": "Pasteurizer B",
+    "description": "Motor overheating alarm triggered.",
+    "cause": "Software glitch",
+    "remedy": "Replaced faulty part; resumed production."
+  },
+  {
+    "incident_id": "INC-1067",
+    "date": "2025-09-16",
+    "line": "Sterilizer G",
+    "description": "Valve stuck mid-cycle; safety stop engaged.",
+    "cause": "Software glitch",
+    "remedy": "Restarted PLC; monitored stability."
+  },
+  {
+    "incident_id": "INC-1068",
+    "date": "2025-09-17",
+    "line": "Filler Line B",
+    "description": "Cooling system underperforming.",
+    "cause": "Blocked pipeline",
+    "remedy": "Lubricated gears; verified smooth operation."
+  },
+  {
+    "incident_id": "INC-1069",
+    "date": "2025-09-18",
+    "line": "Pasteurizer B",
+    "description": "Lubrication failure in gear assembly.",
+    "cause": "Overloaded motor",
+    "remedy": "Lubricated gears; verified smooth operation."
+  },
+  {
+    "incident_id": "INC-1070",
+    "date": "2025-09-19",
+    "line": "Labeler D",
+    "description": "System shutdown due to vibration alert.",
+    "cause": "Insufficient lubrication",
+    "remedy": "Replaced wiring; restored power."
+  },
+  {
+    "incident_id": "INC-1071",
+    "date": "2025-09-20",
+    "line": "Capping Machine C",
+    "description": "Software fault halted production.",
+    "cause": "Worn-out bearing",
+    "remedy": "Lubricated gears; verified smooth operation."
+  },
+  {
+    "incident_id": "INC-1072",
+    "date": "2025-09-21",
+    "line": "Sterilizer G",
+    "description": "Power fluctuation caused downtime.",
+    "cause": "Software glitch",
+    "remedy": "Lubricated gears; verified smooth operation."
+  },
+  {
+    "incident_id": "INC-1073",
+    "date": "2025-09-22",
+    "line": "Filler Line B",
+    "description": "Unexpected pressure drop detected.",
+    "cause": "Corroded wiring",
+    "remedy": "Lubricated gears; verified smooth operation."
+  },
+  {
+    "incident_id": "INC-1074",
+    "date": "2025-09-23",
+    "line": "Sterilizer G",
+    "description": "Frequent misalignment of bottles.",
+    "cause": "Improper operator setup",
+    "remedy": "Restarted PLC; monitored stability."
+  },
+  {
+    "incident_id": "INC-1075",
+    "date": "2025-09-24",
+    "line": "Pasteurizer A",
+    "description": "Cooling system underperforming.",
+    "cause": "Insufficient lubrication",
+    "remedy": "Replaced faulty part; resumed production."
+  },
+  {
+    "incident_id": "INC-1076",
+    "date": "2025-09-25",
+    "line": "Filler Line B",
+    "description": "Excessive noise detected in operation.",
+    "cause": "Software glitch",
+    "remedy": "Adjusted operator settings; tested."
+  },
+  {
+    "incident_id": "INC-1077",
+    "date": "2025-09-26",
+    "line": "Sterilizer G",
+    "description": "Frequent misalignment of bottles.",
+    "cause": "Electrical short circuit",
+    "remedy": "Lubricated gears; verified smooth operation."
+  },
+  {
+    "incident_id": "INC-1078",
+    "date": "2025-09-27",
+    "line": "Pasteurizer B",
+    "description": "Unexpected pressure drop detected.",
+    "cause": "Worn-out bearing",
+    "remedy": "Replaced motor; checked load."
+  },
+  {
+    "incident_id": "INC-1079",
+    "date": "2025-09-28",
+    "line": "Packaging F",
+    "description": "Software fault halted production.",
+    "cause": "Improper operator setup",
+    "remedy": "Calibrated sensors; resumed."
+  },
+  {
+    "incident_id": "INC-1080",
+    "date": "2025-09-29",
+    "line": "Mixer E",
+    "description": "Software fault halted production.",
+    "cause": "Corroded wiring",
+    "remedy": "Replaced motor; checked load."
+  },
+  {
+    "incident_id": "INC-1081",
+    "date": "2025-09-30",
+    "line": "Filler Line B",
+    "description": "Unexpected pressure drop detected.",
+    "cause": "Corroded wiring",
+    "remedy": "Lubricated gears; verified smooth operation."
+  },
+  {
+    "incident_id": "INC-1082",
+    "date": "2025-10-01",
+    "line": "Filler Line B",
+    "description": "Frequent misalignment of bottles.",
+    "cause": "Improper operator setup",
+    "remedy": "Replaced faulty part; resumed production."
+  },
+  {
+    "incident_id": "INC-1083",
+    "date": "2025-10-02",
+    "line": "Labeler D",
+    "description": "Frequent misalignment of bottles.",
+    "cause": "Software glitch",
+    "remedy": "Adjusted operator settings; tested."
+  },
+  {
+    "incident_id": "INC-1084",
+    "date": "2025-10-03",
+    "line": "Capping Machine C",
+    "description": "Valve stuck mid-cycle; safety stop engaged.",
+    "cause": "Insufficient lubrication",
+    "remedy": "Replaced faulty part; resumed production."
+  },
+  {
+    "incident_id": "INC-1085",
+    "date": "2025-10-04",
+    "line": "Pasteurizer A",
+    "description": "Motor overheating alarm triggered.",
+    "cause": "Blocked pipeline",
+    "remedy": "Cleaned system; validated restart."
+  },
+  {
+    "incident_id": "INC-1086",
+    "date": "2025-10-05",
+    "line": "Pasteurizer A",
+    "description": "Power fluctuation caused downtime.",
+    "cause": "Improper operator setup",
+    "remedy": "Cleaned system; validated restart."
+  },
+  {
+    "incident_id": "INC-1087",
+    "date": "2025-10-06",
+    "line": "Sterilizer G",
+    "description": "Lubrication failure in gear assembly.",
+    "cause": "Clogged filter",
+    "remedy": "Lubricated gears; verified smooth operation."
+  },
+  {
+    "incident_id": "INC-1088",
+    "date": "2025-10-07",
+    "line": "Sterilizer G",
+    "description": "Power fluctuation caused downtime.",
+    "cause": "Clogged filter",
+    "remedy": "Cleared debris; restarted system."
+  },
+  {
+    "incident_id": "INC-1089",
+    "date": "2025-10-08",
+    "line": "Mixer E",
+    "description": "System shutdown due to vibration alert.",
+    "cause": "Corroded wiring",
+    "remedy": "Flushed pipeline; verified flow."
+  },
+  {
+    "incident_id": "INC-1090",
+    "date": "2025-10-09",
+    "line": "Filler Line B",
+    "description": "Power fluctuation caused downtime.",
+    "cause": "Improper operator setup",
+    "remedy": "Cleared debris; restarted system."
+  },
+  {
+    "incident_id": "INC-1091",
+    "date": "2025-10-10",
+    "line": "Packaging F",
+    "description": "Excessive noise detected in operation.",
+    "cause": "Overloaded motor",
+    "remedy": "Restarted PLC; monitored stability."
+  },
+  {
+    "incident_id": "INC-1092",
+    "date": "2025-10-11",
+    "line": "Sterilizer G",
+    "description": "Power fluctuation caused downtime.",
+    "cause": "Cooling fan failure",
+    "remedy": "Replaced faulty part; resumed production."
+  },
+  {
+    "incident_id": "INC-1093",
+    "date": "2025-10-12",
+    "line": "Filler Line B",
+    "description": "Lubrication failure in gear assembly.",
+    "cause": "Corroded wiring",
+    "remedy": "Lubricated gears; verified smooth operation."
+  },
+  {
+    "incident_id": "INC-1094",
+    "date": "2025-10-13",
+    "line": "Pasteurizer B",
+    "description": "Excessive noise detected in operation.",
+    "cause": "Blocked pipeline",
+    "remedy": "Restarted PLC; monitored stability."
+  },
+  {
+    "incident_id": "INC-1095",
+    "date": "2025-10-14",
+    "line": "Labeler D",
+    "description": "Power fluctuation caused downtime.",
+    "cause": "Blocked pipeline",
+    "remedy": "Cleared debris; restarted system."
+  },
+  {
+    "incident_id": "INC-1096",
+    "date": "2025-10-15",
+    "line": "Capping Machine C",
+    "description": "Unexpected pressure drop detected.",
+    "cause": "Blocked pipeline",
+    "remedy": "Adjusted operator settings; tested."
+  },
+  {
+    "incident_id": "INC-1097",
+    "date": "2025-10-16",
+    "line": "Mixer E",
+    "description": "Software fault halted production.",
+    "cause": "Software glitch",
+    "remedy": "Calibrated sensors; resumed."
+  },
+  {
+    "incident_id": "INC-1098",
+    "date": "2025-10-17",
+    "line": "Packaging F",
+    "description": "System shutdown due to vibration alert.",
+    "cause": "Insufficient lubrication",
+    "remedy": "Flushed pipeline; verified flow."
+  },
+  {
+    "incident_id": "INC-1099",
+    "date": "2025-10-18",
+    "line": "Labeler D",
+    "description": "Software fault halted production.",
+    "cause": "Corroded wiring",
+    "remedy": "Replaced faulty part; resumed production."
+  },
+  {
+    "incident_id": "INC-1100",
+    "date": "2025-10-19",
+    "line": "Sterilizer G",
+    "description": "Frequent misalignment of bottles.",
+    "cause": "Corroded wiring",
+    "remedy": "Adjusted operator settings; tested."
+  }
+]
