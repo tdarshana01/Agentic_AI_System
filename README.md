@@ -26,24 +26,25 @@ The system exposes functionality via:
 ```bash
 Agentic-AI-System/
 │── API/
-│ └── app.py # FastAPI app
+| └── __init__.py
+│ └── app.py                   # FastAPI app
 │
 │── query/
-│ ├── build_index.py # Build FAISS index from incidents
-│ ├── query_new.py # Query logic
-│ └── prompt_logic.py # LLM + Prompt orchestration
+│ ├── __init__.py
+│ └── prompt_logic.py          # LLM + Prompt orchestration
 │
 │── UI/
-│ ├── client_ws.py # WebSocket / API client
-│ └── streamlit_ui.py # Streamlit UI (optional)
+│ ├── ui.html                  # frontend UI dashboard
+│ └── styles.css
 │
 │── data/
-│ ├── past_incidents.json # Dataset of 100 past incidents
-│ └── storage/ # FAISS vector DB storage
+│ ├── past_incidents.json      # Dataset of 100 past incidents
+| ├── build_index.py
+│ └── storage/                 # FAISS vector DB storage
 │
 │── docs/
 │ ├── ArchitectureDiagram.png
-│ └── Project_Report.docx
+│ └── Assumptions_and_Schema.pdf
 │
 │── requirements.txt
 │── README.md
