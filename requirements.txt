@@ -1,0 +1,23 @@
+fastapi==0.110.0
+uvicorn==0.29.0
+requests==2.31.0
+pydantic==2.6.1
+
+# LlamaIndex core & embeddings
+llama-index-core==0.10.20
+llama-index-embeddings-huggingface==0.1.4
+
+# Vector DB (FAISS)
+faiss-cpu==1.7.4
+
+# For UI (optional, comment out one if not needed)
+streamlit==1.32.0
+gradio==5.11.0
+
+# Local LLM client
+openai==1.14.0
+transformers==4.39.1
+torch>=2.0.0
+
+# Utilities
+numpy==1.26.4
