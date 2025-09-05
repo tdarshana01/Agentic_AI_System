@@ -1,0 +1,134 @@
+[
+  {
+    "new_incident": {
+      "incident_id": "AUTO-INC-001",
+      "machine": "Pasteurizer A",
+      "timestamp": "2025-08-18T09:15:00Z",
+      "type": "TemperatureOverheat",
+      "measured_value": "87.5",
+      "threshold": "85",
+      "status": "shutdown_triggered"
+    }
+  },
+  {
+    "new_incident": {
+      "incident_id": "AUTO-INC-002",
+      "machine": "Filler Line B",
+      "timestamp": "2025-08-18T09:45:00Z",
+      "type": "ConveyorJam",
+      "measured_value": null,
+      "threshold": null,
+      "status": "emergency_stop"
+    }
+  },
+  {
+    "new_incident": {
+      "incident_id": "AUTO-INC-003",
+      "machine": "Capping Machine C",
+      "timestamp": "2025-08-18T10:05:00Z",
+      "type": "CapDefectRate",
+      "measured_value": "12",
+      "threshold": "5",
+      "status": "quality_alert"
+    }
+  },
+  {
+    "new_incident": {
+      "incident_id": "AUTO-INC-004",
+      "machine": "Labeler D",
+      "timestamp": "2025-08-18T10:20:00Z",
+      "type": "SensorFailure",
+      "measured_value": null,
+      "threshold": null,
+      "status": "line_stop"
+    }
+  },
+  {
+    "new_incident": {
+      "incident_id": "AUTO-INC-005",
+      "machine": "Pasteurizer B",
+      "timestamp": "2025-08-18T10:40:00Z",
+      "type": "CoolingFailure",
+      "measured_value": "92",
+      "threshold": "85",
+      "status": "shutdown_triggered"
+    }
+  },
+  {
+    "new_incident": {
+      "incident_id": "AUTO-INC-006",
+      "machine": "Filler Line B",
+      "timestamp": "2025-08-18T11:00:00Z",
+      "type": "LiquidSpill",
+      "measured_value": null,
+      "threshold": null,
+      "status": "safety_stop"
+    }
+  },
+  {
+    "new_incident": {
+      "incident_id": "AUTO-INC-007",
+      "machine": "Bottle Washer A",
+      "timestamp": "2025-08-18T11:20:00Z",
+      "type": "WaterPressureDrop",
+      "measured_value": "1.8",
+      "threshold": "2.5",
+      "status": "maintenance_required"
+    }
+  },
+  {
+    "new_incident": {
+      "incident_id": "AUTO-INC-008",
+      "machine": "Pasteurizer A",
+      "timestamp": "2025-08-18T11:45:00Z",
+      "type": "ValveLeak",
+      "measured_value": null,
+      "threshold": null,
+      "status": "inspection_pending"
+    }
+  },
+  {
+    "new_incident": {
+      "incident_id": "AUTO-INC-009",
+      "machine": "Packaging Line E",
+      "timestamp": "2025-08-18T12:05:00Z",
+      "type": "CartonJam",
+      "measured_value": null,
+      "threshold": null,
+      "status": "line_stop"
+    }
+  },
+  {
+    "new_incident": {
+      "incident_id": "AUTO-INC-010",
+      "machine": "Capping Machine C",
+      "timestamp": "2025-08-18T12:25:00Z",
+      "type": "TorqueDeviation",
+      "measured_value": "18",
+      "threshold": "15",
+      "status": "quality_alert"
+    }
+  },
+  {
+    "new_incident": {
+      "incident_id": "AUTO-INC-011",
+      "machine": "Pasteurizer B",
+      "timestamp": "2025-08-18T12:50:00Z",
+      "type": "TemperatureFluctuation",
+      "measured_value": "79",
+      "threshold": "85",
+      "status": "monitoring"
+    }
+  },
+  {
+    "new_incident": {
+      "incident_id": "AUTO-INC-012",
+      "machine": "Labeler D",
+      "timestamp": "2025-08-18T13:15:00Z",
+      "type": "LabelMisalignment",
+      "measured_value": null,
+      "threshold": null,
+      "status": "quality_alert"
+    }
+  }
+]
