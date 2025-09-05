@@ -26,7 +26,7 @@ The system exposes functionality via:
 ```bash
 Agentic-AI-System/
 │── API/
-| └── __init__.py
+│ └── __init__.py
 │ └── app.py                   # FastAPI app
 │
 │── query/
@@ -39,13 +39,14 @@ Agentic-AI-System/
 │
 │── data/
 │ ├── past_incidents.json      # Dataset of 100 past incidents
-| ├── build_index.py
+│ ├── build_index.py
 │ └── storage/                 # FAISS vector DB storage
 │
 │── docs/
 │ ├── ArchitectureDiagram.png
 │ └── Assumptions_and_Schema.pdf
 │
+│── test_incidents.txt         # New incidents to try out the Agent
 │── requirements.txt
 │── README.md
 ```
@@ -57,8 +58,8 @@ Agentic-AI-System/
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/<your-username>/Agentic-AI-System.git
-cd Agentic-AI-System
+git clone https://github.com/<your-username>/Agentic_AI_System.git
+cd Agentic_AI_System
 ```
 
 ### 2️⃣ Install Dependencies
@@ -68,7 +69,7 @@ pip install -r requirements.txt
 
 ### 3️⃣ Build Vector Index
 ```bash
-python query/build_index.py
+python data/build_index.py
 ```
 
 ### 4️⃣ Run FastAPI Service
@@ -103,6 +104,19 @@ curl -X POST "http://127.0.0.1:8000/analyze_incident/" \
      -H "Content-Type: application/json" \
      -d @sample_incident.json
 ```
+or,
+Use FastAPI Swagger UI to send the input to Agent
+1. Open FastAPI Swagger UI at http://127.0.0.1:8000/docs
+2. Click the first dropdown and click 'try it out'
+3. Paste the new incident in JSON format in the space and click execute
+
+### 🚀 Steps to run the Agent
+1. Open LM Studio and Load the model (mistralai/mistral-7b-instruct-v0.3) and start server.
+2. Run FastAPI by executing ```uvicorn API.app:app --reload ``` in the terminal. (make sure you are in the 'Agentic_AI_System' directory in the terminal)
+3. After starting the API, click on ```ui.html``` file and open it in browser.
+4. Now open the FastAPI Swagger UI at http://127.0.0.1:8000/docs
+5. Paste the new incident in JSON format and click execute.
+6. Wait for the output in UI
 
 ## 📊 Example Output
 ```bash
